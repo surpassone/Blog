@@ -1,6 +1,6 @@
 ﻿/*
  * FCKeditor - The text editor for Internet - http://www.fckeditor.net
- * Copyright (C) 2003-2009 Frederico Caldeira Knabben
+ * Copyright (C) 2003-2008 Frederico Caldeira Knabben
  *
  * == BEGIN LICENSE ==
  *
@@ -155,7 +155,6 @@ FCKSelection.HasAncestorNode = function( nodeTagName )
 } ;
 
 // The "nodeTagName" parameter must be UPPER CASE.
-// It can be also an array of names
 FCKSelection.MoveToAncestorNode = function( nodeTagName )
 {
 	var oNode, oRange ;
@@ -181,7 +180,7 @@ FCKSelection.MoveToAncestorNode = function( nodeTagName )
 		oNode = oRange.parentElement() ;
 	}
 
-	while ( oNode && !oNode.nodeName.Equals( nodeTagName ) )
+	while ( oNode && oNode.nodeName != nodeTagName )
 		oNode = oNode.parentNode ;
 
 	return oNode ;
@@ -210,29 +209,23 @@ FCKSelection.GetSelection = function()
 	return FCK.EditorDocument.selection ;
 }
 
-FCKSelection.Save = function( lock )
+FCKSelection.Save = function( noFocus )
 {
+	// Ensures the editor has the selection focus. (#1801)
+	if ( !noFocus )
+		FCK.Focus() ;
+
 	var editorDocument = FCK.EditorDocument ;
 
 	if ( !editorDocument )
 		return ;
-
-	// Avoid saving again a selection while a dialog is open #2616
-	if ( this.locked )
-		return ;
-	this.locked = !!lock ;
 
 	var selection = editorDocument.selection ;
 	var range ;
 
 	if ( selection )
 	{
-		// The call might fail if the document doesn't have the focus (#1801),
-		// but we don't want to modify the current selection (#2495) with a call to FCK.Focus() ;
-		try {
-			range = selection.createRange() ;
-		}
-		catch(e) {}
+		range = selection.createRange() ;
 
 		// Ensure that the range comes from the editor document.
 		if ( range )
@@ -282,6 +275,5 @@ FCKSelection.Restore = function()
 
 FCKSelection.Release = function()
 {
-	this.locked = false ;
 	delete this.SelectionData ;
 }

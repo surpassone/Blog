@@ -1,6 +1,6 @@
 ﻿/*
  * FCKeditor - The text editor for Internet - http://www.fckeditor.net
- * Copyright (C) 2003-2009 Frederico Caldeira Knabben
+ * Copyright (C) 2003-2008 Frederico Caldeira Knabben
  *
  * == BEGIN LICENSE ==
  *
@@ -308,11 +308,6 @@ DlgTableCellSpace	: "Espacement",
 DlgTableCellPad		: "Contour",
 DlgTableCaption		: "Titre",
 DlgTableSummary		: "Résumé",
-DlgTableHeaders		: "Headers",	//MISSING
-DlgTableHeadersNone		: "None",	//MISSING
-DlgTableHeadersColumn	: "First column",	//MISSING
-DlgTableHeadersRow		: "First Row",	//MISSING
-DlgTableHeadersBoth		: "Both",	//MISSING
 
 // Table Cell Dialog
 DlgCellTitle		: "Propriétés de la cellule",
@@ -335,9 +330,6 @@ DlgCellVerAlignTop	: "Haut",
 DlgCellVerAlignMiddle	: "Milieu",
 DlgCellVerAlignBottom	: "Bas",
 DlgCellVerAlignBaseline	: "Bas du texte",
-DlgCellType		: "Cell Type",	//MISSING
-DlgCellTypeData		: "Data",	//MISSING
-DlgCellTypeHeader	: "Header",	//MISSING
 DlgCellRowSpan		: "Lignes fusionnées",
 DlgCellCollSpan		: "Colonnes fusionnées",
 DlgCellBackColor	: "Couleur de fond",

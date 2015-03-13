@@ -1,6 +1,6 @@
 ﻿/*
  * FCKeditor - The text editor for Internet - http://www.fckeditor.net
- * Copyright (C) 2003-2009 Frederico Caldeira Knabben
+ * Copyright (C) 2003-2008 Frederico Caldeira Knabben
  *
  * == BEGIN LICENSE ==
  *
@@ -30,7 +30,7 @@ ToolbarCollapse		: "Skryť panel nástrojov",
 ToolbarExpand		: "Zobraziť panel nástrojov",
 
 // Toolbar Items and Context Menu
-Save				: "Uložiť",
+Save				: "Uložit",
 NewPage				: "Nová stránka",
 Preview				: "Náhľad",
 Cut					: "Vystrihnúť",
@@ -44,9 +44,9 @@ RemoveFormat		: "Odstrániť formátovanie",
 InsertLinkLbl		: "Odkaz",
 InsertLink			: "Vložiť/zmeniť odkaz",
 RemoveLink			: "Odstrániť odkaz",
-VisitLink			: "Ísť na odkaz",
+VisitLink			: "Open Link",	//MISSING
 Anchor				: "Vložiť/zmeniť kotvu",
-AnchorDelete		: "Odstrániť kotvu",
+AnchorDelete		: "Remove Anchor",	//MISSING
 InsertImageLbl		: "Obrázok",
 InsertImage			: "Vložiť/zmeniť obrázok",
 InsertFlashLbl		: "Flash",
@@ -59,7 +59,7 @@ InsertSpecialCharLbl: "Špeciálne znaky",
 InsertSpecialChar	: "Vložiť špeciálne znaky",
 InsertSmileyLbl		: "Smajlíky",
 InsertSmiley		: "Vložiť smajlíka",
-About				: "O aplikácii FCKeditor",
+About				: "O aplikáci FCKeditor",
 Bold				: "Tučné",
 Italic				: "Kurzíva",
 Underline			: "Podčiarknuté",
@@ -72,14 +72,14 @@ RightJustify		: "Zarovnať vpravo",
 BlockJustify		: "Zarovnať do bloku",
 DecreaseIndent		: "Zmenšiť odsadenie",
 IncreaseIndent		: "Zväčšiť odsadenie",
-Blockquote			: "Citácia",
-CreateDiv			: "Vytvoriť Div kontajner",
-EditDiv				: "Editovať Div kontajner",
-DeleteDiv			: "Odstrániť Div kontajner",
+Blockquote			: "Blockquote",	//MISSING
+CreateDiv			: "Create Div Container",	//MISSING
+EditDiv				: "Edit Div Container",	//MISSING
+DeleteDiv			: "Remove Div Container",	//MISSING
 Undo				: "Späť",
 Redo				: "Znovu",
 NumberedListLbl		: "Číslovanie",
-NumberedList		: "Vložiť/odstrániť číslovanie",
+NumberedList		: "Vložiť/odstrániť číslovaný zoznam",
 BulletedListLbl		: "Odrážky",
 BulletedList		: "Vložiť/odstraniť odrážky",
 ShowTableBorders	: "Zobraziť okraje tabuliek",
@@ -104,32 +104,32 @@ RadioButton		: "Prepínač",
 TextField		: "Textové pole",
 Textarea		: "Textová oblasť",
 HiddenField		: "Skryté pole",
-Button			: "Tlačidlo",
+Button			: "Tlačíidlo",
 SelectionField	: "Rozbaľovací zoznam",
 ImageButton		: "Obrázkové tlačidlo",
 
 FitWindow		: "Maximalizovať veľkosť okna editora",
-ShowBlocks		: "Ukázať bloky",
+ShowBlocks		: "Show Blocks",	//MISSING
 
 // Context Menu
 EditLink			: "Zmeniť odkaz",
 CellCM				: "Bunka",
 RowCM				: "Riadok",
 ColumnCM			: "Stĺpec",
-InsertRowAfter		: "Vložiť riadok pred",
-InsertRowBefore		: "Vložiť riadok za",
+InsertRowAfter		: "Insert Row After",	//MISSING
+InsertRowBefore		: "Insert Row Before",	//MISSING
 DeleteRows			: "Vymazať riadok",
-InsertColumnAfter	: "Vložiť stĺpec pred",
-InsertColumnBefore	: "Vložiť stĺpec za",
+InsertColumnAfter	: "Insert Column After",	//MISSING
+InsertColumnBefore	: "Insert Column Before",	//MISSING
 DeleteColumns		: "Zmazať stĺpec",
-InsertCellAfter		: "Vložiť bunku za",
-InsertCellBefore	: "Vložiť bunku pred",
+InsertCellAfter		: "Insert Cell After",	//MISSING
+InsertCellBefore	: "Insert Cell Before",	//MISSING
 DeleteCells			: "Vymazať bunky",
 MergeCells			: "Zlúčiť bunky",
-MergeRight			: "Zlúčiť doprava",
-MergeDown			: "Zlúčiť dole",
-HorizontalSplitCell	: "Rozdeliť bunky horizontálne",
-VerticalSplitCell	: "Rozdeliť bunky vertikálne",
+MergeRight			: "Merge Right",	//MISSING
+MergeDown			: "Merge Down",	//MISSING
+HorizontalSplitCell	: "Split Cell Horizontally",	//MISSING
+VerticalSplitCell	: "Split Cell Vertically",	//MISSING
 TableDelete			: "Vymazať tabuľku",
 CellProperties		: "Vlastnosti bunky",
 TableProperties		: "Vlastnosti tabuľky",
@@ -159,9 +159,9 @@ UnknownCommand		: "Neznámy príkaz \"%1\"",
 NotImplemented		: "Príkaz nie je implementovaný",
 UnknownToolbarSet	: "Panel nástrojov \"%1\" neexistuje",
 NoActiveX			: "Bezpečnostné nastavenia vášho prehliadača môžu obmedzovať niektoré funkcie editora. Pre ich plnú funkčnosť musíte zapnúť voľbu \"Spúšťať ActiveX moduly a zásuvné moduly\", inak sa môžete stretnúť s chybami a nefunkčnosťou niektorých funkcií.",
-BrowseServerBlocked : "Prehliadač zdrojových prvkov nebolo možné otvoriť. Uistite sa, že máte vypnutú službu blokovania popup okien.",
-DialogBlocked		: "Dialógové okno nebolo možné otvoriť. Uistite sa, že máte vypnutú službu blokovania popup okien.",
-VisitLinkBlocked	: "Nebolo možné otvoriť nové okno. Uistite sa, že máte vypnutú službu blokovania popup okien.",
+BrowseServerBlocked : "Prehliadač zdrojových prvkov nebolo možné otvoriť. Uistite sa, že máte vypnuté všetky blokovače vyskakujúcich okien.",
+DialogBlocked		: "Dialógové okno nebolo možné otvoriť. Uistite sa, že máte vypnuté všetky blokovače vyskakujúcich okien.",
+VisitLinkBlocked	: "It was not possible to open a new window. Make sure all popup blockers are disabled.",	//MISSING
 
 // Dialogs
 DlgBtnOK			: "OK",
@@ -308,11 +308,6 @@ DlgTableCellSpace	: "Vzdialenosť buniek",
 DlgTableCellPad		: "Odsadenie obsahu",
 DlgTableCaption		: "Popis",
 DlgTableSummary		: "Prehľad",
-DlgTableHeaders		: "Headers",	//MISSING
-DlgTableHeadersNone		: "None",	//MISSING
-DlgTableHeadersColumn	: "First column",	//MISSING
-DlgTableHeadersRow		: "First Row",	//MISSING
-DlgTableHeadersBoth		: "Both",	//MISSING
 
 // Table Cell Dialog
 DlgCellTitle		: "Vlastnosti bunky",
@@ -335,9 +330,6 @@ DlgCellVerAlignTop	: "Nahor",
 DlgCellVerAlignMiddle	: "Doprostred",
 DlgCellVerAlignBottom	: "Dole",
 DlgCellVerAlignBaseline	: "Na základňu",
-DlgCellType		: "Cell Type",	//MISSING
-DlgCellTypeData		: "Data",	//MISSING
-DlgCellTypeHeader	: "Header",	//MISSING
 DlgCellRowSpan		: "Zlúčené riadky",
 DlgCellCollSpan		: "Zlúčené stĺpce",
 DlgCellBackColor	: "Farba pozadia",
@@ -345,7 +337,7 @@ DlgCellBorderColor	: "Farba ohraničenia",
 DlgCellBtnSelect	: "Výber...",
 
 // Find and Replace Dialog
-DlgFindAndReplaceTitle	: "Nájsť a nahradiť",
+DlgFindAndReplaceTitle	: "Find and Replace",	//MISSING
 
 // Find Dialog
 DlgFindTitle		: "Hľadať",
@@ -362,14 +354,14 @@ DlgReplaceReplAllBtn	: "Nahradiť všetko",
 DlgReplaceWordChk		: "Len celé slová",
 
 // Paste Operations / Dialog
-PasteErrorCut	: "Bezpečnostné nastavenia Vášho prehliadača nedovoľujú editoru spustiť funkciu pre vystrihnutie zvoleného textu do schránky. Prosím vystrihnite zvolený text do schránky pomocou klávesnice (Ctrl+X).",
-PasteErrorCopy	: "Bezpečnostné nastavenia Vášho prehliadača nedovoľujú editoru spustiť funkciu pre kopírovanie zvoleného textu do schránky. Prosím skopírujte zvolený text do schránky pomocou klávesnice (Ctrl+C).",
+PasteErrorCut	: "Bezpečnostné nastavenie Vášho prehliadača nedovoľujú editoru spustiť funkciu pre vystrihnutie zvoleného textu do schránky. Prosím vystrihnite zvolený text do schránky pomocou klávesnice (Ctrl+X).",
+PasteErrorCopy	: "Bezpečnostné nastavenie Vášho prehliadača nedovoľujú editoru spustiť funkciu pre kopírovanie zvoleného textu do schránky. Prosím skopírujte zvolený text do schránky pomocou klávesnice (Ctrl+C).",
 
 PasteAsText		: "Vložiť ako čistý text",
 PasteFromWord	: "Vložiť text z Wordu",
 
 DlgPasteMsg2	: "Prosím vložte nasledovný rámček použitím klávesnice (<STRONG>Ctrl+V</STRONG>) a stlačte <STRONG>OK</STRONG>.",
-DlgPasteSec		: "Bezpečnostné nastavenia Vášho prehliadača nedovoľujú editoru pristupovať priamo k datám v schránke. Musíte ich vložiť znovu do tohto okna.",
+DlgPasteSec		: "Because of your browser security settings, the editor is not able to access your clipboard data directly. You are required to paste it again in this window.",	//MISSING
 DlgPasteIgnoreFont		: "Ignorovať nastavenia typu písma",
 DlgPasteRemoveStyles	: "Odstrániť formátovanie",
 
@@ -527,8 +519,8 @@ DlgAboutVersion		: "verzia",
 DlgAboutInfo		: "Viac informácií získate na",
 
 // Div Dialog
-DlgDivGeneralTab	: "Hlavné",
-DlgDivAdvancedTab	: "Rozšírené",
-DlgDivStyle		: "Štýl",
-DlgDivInlineStyle	: "Inline štýl"
+DlgDivGeneralTab	: "General",	//MISSING
+DlgDivAdvancedTab	: "Advanced",	//MISSING
+DlgDivStyle		: "Style",	//MISSING
+DlgDivInlineStyle	: "Inline Style"	//MISSING
 };

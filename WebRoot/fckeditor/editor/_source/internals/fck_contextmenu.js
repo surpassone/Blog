@@ -1,6 +1,6 @@
 ﻿/*
  * FCKeditor - The text editor for Internet - http://www.fckeditor.net
- * Copyright (C) 2003-2009 Frederico Caldeira Knabben
+ * Copyright (C) 2003-2008 Frederico Caldeira Knabben
  *
  * == BEGIN LICENSE ==
  *
@@ -337,9 +337,6 @@ function FCK_ContextMenu_OnBeforeOpen()
 
 function FCK_ContextMenu_OnItemClick( item )
 {
-	// IE might work incorrectly if we refocus the editor #798
-	if ( !FCKBrowserInfo.IsIE )
-		FCK.Focus() ;
-
+	FCK.Focus() ;
 	FCKCommands.GetCommand( item.Name ).Execute( item.CustomData ) ;
 }

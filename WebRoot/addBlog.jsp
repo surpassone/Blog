@@ -1,42 +1,53 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+ï»¿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<title>ÎŞ±êÌâÎÄµµ</title>
-<script  type="text/javascript"  src="fckeditor/fckeditor.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>æ— æ ‡é¢˜æ–‡æ¡£</title>
+<script type="text/javascript" src="fckeditor/fckeditor.js"></script>
+<script>    
+    window.onload = function()    
+    {    
+    var oFCKeditor = new FCKeditor( 'content' ) ;    
+    oFCKeditor.BasePath = "/blog/fckeditor/" ; 
+    oFCKeditor.ToolbarSet="Default";
+    oFCKeditor.Height="400";   
+    oFCKeditor.ReplaceTextarea() ;    
+    }    
+</script> 
 </head>
+
 <body>
-ÇëÊäÈë²©ÎÄÄÚÈİ£º
+è¯·è¾“å…¥åšæ–‡å†…å®¹ï¼š
 <form action="" method="get">
   <table width="603" height="168" border="0">
     <tr>
-      <td width="102">±êÌâ£º</td>
+      <td width="102">æ ‡é¢˜ï¼š</td>
       <td width="491"><label>
         <input name="title" type="text" id="title" size="60" />
       </label></td>
     </tr>
     <tr>
-      <td>Àà±ğ£º</td>
+      <td>ç±»åˆ«ï¼š</td>
       <td><label>
         <select name="select">
-          <option>Ğ¡¸ßÓĞ»°Ëµ</option>
-          <option>²ËÄñÀúÁ·</option>
-          <option>Éú»î¸ĞÎò</option>
+          <option>å°é«˜æœ‰è¯è¯´</option>
+          <option>èœé¸Ÿå†ç»ƒ</option>
+          <option>ç”Ÿæ´»æ„Ÿæ‚Ÿ</option>
         </select>
       </label></td>
     </tr>
     <tr>
-      <td bordercolor="0">ÄÚÈİ£º</td>
+      <td bordercolor="0">å†…å®¹ï¼š</td>
       <td><label>
-        <textarea name="content" cols="60" rows="10"></textarea>
+        <textarea name="content" cols="60" rows="10" id="content"></textarea>
       </label></td>
     </tr>
     <tr>
       <td><label>
-        <input type="reset" name="Submit" value="ÖØÖÃ" />
+        <input type="reset" name="Submit" value="é‡ç½®" />
       </label></td>
       <td><label>
-        <input type="submit" name="Submit2" value="Ìá½»" />
+        <input type="submit" name="Submit2" value="æäº¤" />
       </label></td>
     </tr>
     <tr>

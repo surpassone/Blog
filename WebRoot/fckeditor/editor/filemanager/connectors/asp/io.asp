@@ -1,6 +1,6 @@
 ﻿<%
  ' FCKeditor - The text editor for Internet - http://www.fckeditor.net
- ' Copyright (C) 2003-2009 Frederico Caldeira Knabben
+ ' Copyright (C) 2003-2008 Frederico Caldeira Knabben
  '
  ' == BEGIN LICENSE ==
  '
@@ -22,7 +22,6 @@
 %>
 <%
 function CombinePaths( sBasePath, sFolder)
-	sFolder = replace(sFolder, "\", "/")
 	CombinePaths =  RemoveFromEnd( sBasePath, "/" ) & "/" & RemoveFromStart( sFolder, "/" )
 end function
 
@@ -152,7 +151,7 @@ End Function
 Function IsAllowedType( resourceType )
 	Dim oRE
 	Set oRE	= New RegExp
-	oRE.IgnoreCase	= False
+	oRE.IgnoreCase	= True
 	oRE.Global		= True
 	oRE.Pattern		= "^(" & ConfigAllowedTypes & ")$"
 

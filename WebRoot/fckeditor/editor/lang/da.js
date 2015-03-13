@@ -1,6 +1,6 @@
 ﻿/*
  * FCKeditor - The text editor for Internet - http://www.fckeditor.net
- * Copyright (C) 2003-2009 Frederico Caldeira Knabben
+ * Copyright (C) 2003-2008 Frederico Caldeira Knabben
  *
  * == BEGIN LICENSE ==
  *
@@ -44,9 +44,9 @@ RemoveFormat		: "Fjern formatering",
 InsertLinkLbl		: "Hyperlink",
 InsertLink			: "Indsæt/rediger hyperlink",
 RemoveLink			: "Fjern hyperlink",
-VisitLink			: "Åbn hyperlink",
+VisitLink			: "Open Link",	//MISSING
 Anchor				: "Indsæt/rediger bogmærke",
-AnchorDelete		: "Fjern bogmærke",
+AnchorDelete		: "Remove Anchor",	//MISSING
 InsertImageLbl		: "Indsæt billede",
 InsertImage			: "Indsæt/rediger billede",
 InsertFlashLbl		: "Flash",
@@ -72,10 +72,10 @@ RightJustify		: "Højrestillet",
 BlockJustify		: "Lige margener",
 DecreaseIndent		: "Formindsk indrykning",
 IncreaseIndent		: "Forøg indrykning",
-Blockquote			: "Blokcitat",
-CreateDiv			: "Opret div container",
-EditDiv				: "Rediger div container",
-DeleteDiv			: "Fjern div container",
+Blockquote			: "Blockquote",	//MISSING
+CreateDiv			: "Create Div Container",	//MISSING
+EditDiv				: "Edit Div Container",	//MISSING
+DeleteDiv			: "Remove Div Container",	//MISSING
 Undo				: "Fortryd",
 Redo				: "Annuller fortryd",
 NumberedListLbl		: "Talopstilling",
@@ -116,20 +116,20 @@ EditLink			: "Rediger hyperlink",
 CellCM				: "Celle",
 RowCM				: "Række",
 ColumnCM			: "Kolonne",
-InsertRowAfter		: "Indsæt række efter",
-InsertRowBefore		: "Indsæt række før",
+InsertRowAfter		: "Insert Row After",	//MISSING
+InsertRowBefore		: "Insert Row Before",	//MISSING
 DeleteRows			: "Slet række",
-InsertColumnAfter	: "Indsæt kolonne efter",
-InsertColumnBefore	: "Indsæt kolonne før",
+InsertColumnAfter	: "Insert Column After",	//MISSING
+InsertColumnBefore	: "Insert Column Before",	//MISSING
 DeleteColumns		: "Slet kolonne",
-InsertCellAfter		: "Indsæt celle efter",
-InsertCellBefore	: "Indsæt celle før",
+InsertCellAfter		: "Insert Cell After",	//MISSING
+InsertCellBefore	: "Insert Cell Before",	//MISSING
 DeleteCells			: "Slet celle",
 MergeCells			: "Flet celler",
-MergeRight			: "Flet til højre",
-MergeDown			: "Flet nedad",
-HorizontalSplitCell	: "Del celle vandret",
-VerticalSplitCell	: "Del celle lodret",
+MergeRight			: "Merge Right",	//MISSING
+MergeDown			: "Merge Down",	//MISSING
+HorizontalSplitCell	: "Split Cell Horizontally",	//MISSING
+VerticalSplitCell	: "Split Cell Vertically",	//MISSING
 TableDelete			: "Slet tabel",
 CellProperties		: "Egenskaber for celle",
 TableProperties		: "Egenskaber for tabel",
@@ -161,7 +161,7 @@ UnknownToolbarSet	: "Værktøjslinjen \"%1\" eksisterer ikke!",
 NoActiveX			: "Din browsers sikkerhedsindstillinger begrænser nogle af editorens muligheder.<br>Slå \"Kør ActiveX-objekter og plug-ins\" til, ellers vil du opleve fejl og manglende muligheder.",
 BrowseServerBlocked : "Browseren kunne ikke åbne de nødvendige ressourcer!<br>Slå pop-up blokering fra.",
 DialogBlocked		: "Dialogvinduet kunne ikke åbnes!<br>Slå pop-up blokering fra.",
-VisitLinkBlocked	: "Det var ikke muligt at åbne et nyt vindue. Tjek, at ingen popup-blokkere er aktive.",
+VisitLinkBlocked	: "It was not possible to open a new window. Make sure all popup blockers are disabled.",	//MISSING
 
 // Dialogs
 DlgBtnOK			: "OK",
@@ -276,7 +276,7 @@ DlgLnkPopTop		: "Position fra toppen",
 DlnLnkMsgNoUrl		: "Indtast hyperlink URL!",
 DlnLnkMsgNoEMail	: "Indtast e-mailaddresse!",
 DlnLnkMsgNoAnchor	: "Vælg bogmærke!",
-DlnLnkMsgInvPopName	: "Navnet på popup'en skal starte med et bogstav og må ikke indeholde mellemrum",
+DlnLnkMsgInvPopName	: "The popup name must begin with an alphabetic character and must not contain spaces",	//MISSING
 
 // Color Dialog
 DlgColorTitle		: "Vælg farve",
@@ -308,11 +308,6 @@ DlgTableCellSpace	: "Celleafstand",
 DlgTableCellPad		: "Cellemargen",
 DlgTableCaption		: "Titel",
 DlgTableSummary		: "Resume",
-DlgTableHeaders		: "Headers",	//MISSING
-DlgTableHeadersNone		: "None",	//MISSING
-DlgTableHeadersColumn	: "First column",	//MISSING
-DlgTableHeadersRow		: "First Row",	//MISSING
-DlgTableHeadersBoth		: "Both",	//MISSING
 
 // Table Cell Dialog
 DlgCellTitle		: "Egenskaber for celle",
@@ -335,9 +330,6 @@ DlgCellVerAlignTop	: "Øverst",
 DlgCellVerAlignMiddle	: "Centreret",
 DlgCellVerAlignBottom	: "Nederst",
 DlgCellVerAlignBaseline	: "Grundlinje",
-DlgCellType		: "Cell Type",	//MISSING
-DlgCellTypeData		: "Data",	//MISSING
-DlgCellTypeHeader	: "Header",	//MISSING
 DlgCellRowSpan		: "Højde i antal rækker",
 DlgCellCollSpan		: "Bredde i antal kolonner",
 DlgCellBackColor	: "Baggrundsfarve",
@@ -345,7 +337,7 @@ DlgCellBorderColor	: "Rammefarve",
 DlgCellBtnSelect	: "Vælg...",
 
 // Find and Replace Dialog
-DlgFindAndReplaceTitle	: "Søg og erstat",
+DlgFindAndReplaceTitle	: "Find and Replace",	//MISSING
 
 // Find Dialog
 DlgFindTitle		: "Find",
@@ -369,7 +361,7 @@ PasteAsText		: "Indsæt som ikke-formateret tekst",
 PasteFromWord	: "Indsæt fra Word",
 
 DlgPasteMsg2	: "Indsæt i feltet herunder (<STRONG>Ctrl+V</STRONG>) og klik <STRONG>OK</STRONG>.",
-DlgPasteSec		: "På grund af browserens sikkerhedsindstillinger kan editoren ikke tilgå udklipsholderen direkte. Du skal indsætte udklipsholderens indhold i dette vindue igen.",
+DlgPasteSec		: "Because of your browser security settings, the editor is not able to access your clipboard data directly. You are required to paste it again in this window.",	//MISSING
 DlgPasteIgnoreFont		: "Ignorer font definitioner",
 DlgPasteRemoveStyles	: "Ignorer typografi",
 
@@ -405,9 +397,9 @@ IeSpellDownload			: "Stavekontrol ikke installeret.<br>Vil du hente den nu?",
 // Button Dialog
 DlgButtonText		: "Tekst",
 DlgButtonType		: "Type",
-DlgButtonTypeBtn	: "Knap",
-DlgButtonTypeSbm	: "Send",
-DlgButtonTypeRst	: "Nulstil",
+DlgButtonTypeBtn	: "Button",	//MISSING
+DlgButtonTypeSbm	: "Submit",	//MISSING
+DlgButtonTypeRst	: "Reset",	//MISSING
 
 // Checkbox and Radio Button Dialogs
 DlgCheckboxName		: "Navn",
@@ -456,7 +448,7 @@ DlgHiddenValue	: "Værdi",
 // Bulleted List Dialog
 BulletedListProp	: "Egenskaber for punktopstilling",
 NumberedListProp	: "Egenskaber for talopstilling",
-DlgLstStart			: "Start",
+DlgLstStart			: "Start",	//MISSING
 DlgLstType			: "Type",
 DlgLstTypeCircle	: "Cirkel",
 DlgLstTypeDisc		: "Udfyldt cirkel",
@@ -479,15 +471,15 @@ DlgDocLangDirLTR	: "Fra venstre mod højre (LTR)",
 DlgDocLangDirRTL	: "Fra højre mod venstre (RTL)",
 DlgDocLangCode		: "Landekode",
 DlgDocCharSet		: "Tegnsæt kode",
-DlgDocCharSetCE		: "Centraleuropæisk",
-DlgDocCharSetCT		: "Traditionel kinesisk (Big5)",
-DlgDocCharSetCR		: "Kyrillisk",
-DlgDocCharSetGR		: "Græsk",
-DlgDocCharSetJP		: "Japansk",
-DlgDocCharSetKR		: "Koreansk",
-DlgDocCharSetTR		: "Tyrkisk",
-DlgDocCharSetUN		: "Unicode (UTF-8)",
-DlgDocCharSetWE		: "Vesteuropæisk",
+DlgDocCharSetCE		: "Central European",	//MISSING
+DlgDocCharSetCT		: "Chinese Traditional (Big5)",	//MISSING
+DlgDocCharSetCR		: "Cyrillic",	//MISSING
+DlgDocCharSetGR		: "Greek",	//MISSING
+DlgDocCharSetJP		: "Japanese",	//MISSING
+DlgDocCharSetKR		: "Korean",	//MISSING
+DlgDocCharSetTR		: "Turkish",	//MISSING
+DlgDocCharSetUN		: "Unicode (UTF-8)",	//MISSING
+DlgDocCharSetWE		: "Western European",	//MISSING
 DlgDocCharSetOther	: "Anden tegnsæt kode",
 
 DlgDocDocType		: "Dokumenttype kategori",
@@ -517,7 +509,7 @@ DlgTemplatesTitle	: "Indholdsskabeloner",
 DlgTemplatesSelMsg	: "Vælg den skabelon, som skal åbnes i editoren.<br>(Nuværende indhold vil blive overskrevet!):",
 DlgTemplatesLoading	: "Henter liste over skabeloner...",
 DlgTemplatesNoTpl	: "(Der er ikke defineret nogen skabelon!)",
-DlgTemplatesReplace	: "Erstat det faktiske indhold",
+DlgTemplatesReplace	: "Replace actual contents",	//MISSING
 
 // About Dialog
 DlgAboutAboutTab	: "Om",
@@ -527,8 +519,8 @@ DlgAboutVersion		: "version",
 DlgAboutInfo		: "For yderlig information gå til",
 
 // Div Dialog
-DlgDivGeneralTab	: "Generelt",
-DlgDivAdvancedTab	: "Avanceret",
-DlgDivStyle		: "Style",
-DlgDivInlineStyle	: "Inline style"
+DlgDivGeneralTab	: "General",	//MISSING
+DlgDivAdvancedTab	: "Advanced",	//MISSING
+DlgDivStyle		: "Style",	//MISSING
+DlgDivInlineStyle	: "Inline Style"	//MISSING
 };
