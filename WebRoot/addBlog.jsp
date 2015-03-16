@@ -18,7 +18,7 @@
 
 <body>
 请输入博文内容：
-<form action="" method="get">
+<form id="form1" name="form1" action="/blog/servlet/BlogServlet" method="post">
   <table width="603" height="168" border="0">
     <tr>
       <td width="102">标题：</td>
@@ -29,10 +29,10 @@
     <tr>
       <td>类别：</td>
       <td><label>
-        <select name="select">
-          <option>小高有话说</option>
-          <option>菜鸟历练</option>
-          <option>生活感悟</option>
+        <select name="category">
+          <option value="2">小高有话说</option>
+          <option value="3">菜鸟历练</option>
+          <option value="4">生活感悟</option>
         </select>
       </label></td>
     </tr>
